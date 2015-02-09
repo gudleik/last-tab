@@ -1,7 +1,7 @@
 module.exports =
 
   activate: (state) ->
-    atom.workspaceView.command "last-tab:jump", => @jumpToLastTab()
+    atom.commands.add 'atom-text-editor', 'last-tab:jump', => @jumpToLastTab()
 
   jumpToLastTab: ->
     lastItem = atom.workspace.activePane.getItems().length-1
