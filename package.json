@@ -3,13 +3,13 @@
   "main": "./lib/last-tab",
   "version": "0.1.2",
   "description": "Jump to last tab with cmd-9",
-  "activationEvents": [
-    "last-tab:jump"
-  ],
+  "activationCommands": {
+    "atom-workspace": ["last-tab:jump"]
+  },
   "repository": "https://github.com/gudleik/last-tab",
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": ">= 0.50.0 <2.0.0"
   },
   "dependencies": {}
 }
