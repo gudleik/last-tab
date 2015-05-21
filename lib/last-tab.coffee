@@ -4,5 +4,6 @@ module.exports =
     atom.commands.add 'atom-text-editor', 'last-tab:jump', => @jumpToLastTab()
 
   jumpToLastTab: ->
-    lastItem = atom.workspace.activePane.getItems().length-1
-    atom.workspace.activePane.activateItemAtIndex lastItem
+    activePane = atom.workspace.getActivePane()
+    lastItem   = activePane.getItems().length-1
+    activePane.activateItemAtIndex lastItem

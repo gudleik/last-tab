@@ -4,7 +4,7 @@
   "version": "0.1.3",
   "description": "Jump to last tab with cmd-9",
   "activationCommands": {
-    "atom-workspace": [
+    "atom-text-editor": [
       "last-tab:jump"
     ]
   },
