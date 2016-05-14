@@ -1,8 +1,8 @@
 {
   "name": "last-tab",
   "main": "./lib/last-tab",
-  "version": "0.1.4",
-  "description": "Jump to last tab with cmd-9",
+  "version": "0.1.5",
+  "description": "Jump to last tab in the list with cmd-9",
   "activationCommands": {
     "atom-text-editor": [
       "last-tab:jump"
